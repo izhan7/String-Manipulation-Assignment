@@ -1,0 +1,18 @@
+Dim str1 As String = ""
+        Dim count As Integer = 0
+        Dim thischar As Char = ""
+        Dim str As Boolean
+        Console.Write("Enter String: ")
+        str1 = LCase(Console.ReadLine)
+
+        For count = 1 To Len(str1)
+            thischar = Mid(str1, count, 1)
+            If (thischar >= "a" And thischar <= "z") Then
+                str = True
+            Else
+                str = False
+            End If
+
+        Next
+        Console.WriteLine("String contains all alphabets: " & str)
+        Console.ReadKey()
