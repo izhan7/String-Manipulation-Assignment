@@ -1,4 +1,7 @@
-Dim str1 As String = ""
+Module Module1
+
+    Sub Main()
+        Dim str1 As String = ""
         Dim count As Integer = 0
         Dim thischar As Char = ""
         Dim str As Boolean
@@ -16,3 +19,6 @@ Dim str1 As String = ""
         Next
         Console.WriteLine("String contains all alphabets: " & str)
         Console.ReadKey()
+    End Sub
+
+End Module
